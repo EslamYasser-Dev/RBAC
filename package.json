@@ -1,0 +1,31 @@
+{
+  "name": "fastify-API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "migrate": "drizzle-kit generate"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.23.1",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4",
+    "zod-to-json-schema": "^3.23.2"
+  },
+  "dependencies": {
+    "argon2": "^0.40.3",
+    "drizzle-orm": "^0.32.1",
+    "fastify": "^4.28.1",
+    "fastify-guard": "^2.0.0",
+    "fastify-zod": "^1.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "pino": "^9.3.2",
+    "pino-pretty": "^11.2.2",
+    "zennv": "^0.1.1",
+    "zod": "^3.23.8"
+  }
+}
