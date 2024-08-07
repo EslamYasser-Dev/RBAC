@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1722764899944,
-      "tag": "0000_elite_vertigo",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1722768314644,
-      "tag": "0001_tidy_sunfire",
+      "when": 1723027189147,
+      "tag": "0000_mixed_swordsman",
       "breakpoints": true
     }
   ]

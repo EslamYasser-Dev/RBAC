@@ -10,7 +10,6 @@ export async function createApplicationHandler(req: FastifyRequest<{ Body: creat
         name
     });
 
-
     const superAdminRolePromise = createRole({
         applicationId: application.id,
         name: SYSTEM_ROLES.SUPER_ADMIN,
@@ -29,6 +28,18 @@ export async function createApplicationHandler(req: FastifyRequest<{ Body: creat
         applicationUserRolePromise
     ])
 
+    if (superAdminRole.status === 'rejected') {
+        throw new Error("error creating application admin role");
 
-    return { application, superAdminRole, applicationUserRole };
+    }
+
+    if (applicationUserRole.status === 'rejected') {
+        throw new Error("error creating application user role");
+
+    }
+    return {
+        application,
+        superAdminRole: superAdminRole.value,
+        applicationUserRole: applicationUserRole.value
+    };
 }
