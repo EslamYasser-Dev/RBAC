@@ -2,7 +2,7 @@
   "name": "RBAC in fastify and PostgreSQL, Drizzle-ORM",
   "version": "1.0.0",
   "main": "src/main.js",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "dev": "tsx watch src/main.ts",
     "migrate": "rm -rf migrations; drizzle-kit generate",
