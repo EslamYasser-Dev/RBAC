@@ -1,11 +1,13 @@
 {
-  "name": "fastify-API",
+  "name": "RBAC in fastify and PostgreSQL, Drizzle-ORM",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/main.js",
   "license": "MIT",
   "scripts": {
     "dev": "tsx watch src/main.ts",
-    "migrate": "rm -rf migrations; drizzle-kit generate"
+    "migrate": "rm -rf migrations; drizzle-kit generate",
+    "build":"tsc",
+    "start": "node dist/main.js"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.6",
